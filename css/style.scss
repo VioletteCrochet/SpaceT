@@ -1,10 +1,39 @@
 body {
+    width: 100%;
     nav {
+        padding-left: 20px;
         display: flex;
         height: 80px;
         background: black;
-        n-logo {
+        width: 100%;
+        .n-logo {
+          
+            width:250px;      
+           
+        }
+        img{
+            
+            width: 100%;
+        }
 
+        ul{
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: row;
+            text-align: center;
+        }
+        li{
+            
+            list-style: none;
+            flex-direction: row;
+            justify-content: space-between; 
+
+            a{
+                display: block;
+            }
         }
     }
 }
