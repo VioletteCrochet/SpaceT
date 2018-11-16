@@ -1,1 +1,7 @@
-/* No CSS */
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  background: black;
+}
