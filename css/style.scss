@@ -6,7 +6,34 @@ body {
     background: url("../img/desktop_wp.jpg") no-repeat;
     background-size: cover;
     nav {
-        display: none;
+        padding-left: 20px;
+        display: flex;
+        height: 80px;
+        background: black;
+        width: 100%;
+        .n-logo {
+            width: 250px;
+        }
+        img {
+            width: 200px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        li {
+            float: right;
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                margin: 30px;
+                text-decoration: none;
+            }
+        }
     }
     .contenent-presentation {
         width: 30%;
@@ -26,6 +53,7 @@ body {
         bottom: 0;
         .fleche {
             width: 30px;
+            width: 100%;
         }
     }
 }

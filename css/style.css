@@ -9,7 +9,43 @@ body {
 }
 
 body nav {
-  display: none;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  background: black;
+  width: 100%;
+}
+
+body nav .n-logo {
+  width: 250px;
+}
+
+body nav img {
+  width: 200px;
+}
+
+body nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body nav li {
+  float: right;
+}
+
+body nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 30px;
+  text-decoration: none;
 }
 
 body .contenent-presentation {
@@ -37,4 +73,5 @@ body .contenent-flêche {
 
 body .contenent-flêche .fleche {
   width: 30px;
+  width: 100%;
 }
