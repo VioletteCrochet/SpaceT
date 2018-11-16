@@ -9,10 +9,6 @@ body nav {
   display: flex;
   height: 80px;
   background: black;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 100%;
 }
 
@@ -21,7 +17,7 @@ body nav .n-logo {
 }
 
 body nav img {
-  width: 100%;
+  width: 200px;
 }
 
 body nav ul {
@@ -29,23 +25,19 @@ body nav ul {
   margin: 0;
   padding: 0;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 body nav li {
-  list-style: none;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  float: right;
+}
+
+body nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 30px;
+  text-decoration: none;
 }
