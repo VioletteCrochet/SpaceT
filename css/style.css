@@ -3,13 +3,15 @@ body {
 }
 
 body nav {
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
   padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
   background: black;
-  width: 100%;
 }
 
 body nav .n-logo {
@@ -25,9 +27,9 @@ body nav ul {
   margin: 0;
   padding: 0;
   width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body nav li {
