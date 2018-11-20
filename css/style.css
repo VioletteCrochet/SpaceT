@@ -66,7 +66,7 @@ body .contenent-home {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
-  height: 90vh;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -258,6 +258,165 @@ body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner h2 {
 body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner p {
   font-size: 12px;
   margin: auto auto auto 25px;
+}
+
+body .contenent-contact {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .contenent-contact .cc-contact {
+  width: 600px;
+  height: 70%;
+  background-image: url(../img/desktop_wp_flou.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 0px 54px 0px #c0c0c0;
+          box-shadow: 0px 0px 54px 0px #c0c0c0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+body .contenent-contact .cc-contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 76%;
+  width: 400px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10% 0;
+}
+
+body .contenent-contact .cc-contact form h2 {
+  margin: 0;
+}
+
+body .contenent-contact .cc-contact form .cccf-barre {
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  border: 1px solid;
+  border-color: white;
+}
+
+body .contenent-contact .cc-contact form .cccf-name {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+body .contenent-contact .cc-contact form .cccf-name img {
+  height: 26px;
+  margin: 0 10px 0 10px;
+}
+
+body .contenent-contact .cc-contact form .cccf-name input {
+  color: black;
+  text-align: center;
+  border: none;
+  width: 87%;
+}
+
+body .contenent-contact .cc-contact form .cccf-mail {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+body .contenent-contact .cc-contact form .cccf-mail img {
+  height: 26px;
+  margin: 0 10px 0 10px;
+}
+
+body .contenent-contact .cc-contact form .cccf-mail input {
+  color: black;
+  text-align: center;
+  border: none;
+  width: 86%;
+}
+
+body .contenent-contact .cc-contact form .cccf-date {
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+
+body .contenent-contact .cc-contact form .cccf-date img {
+  height: 26px;
+  margin: 0 110px 0 10px;
+}
+
+body .contenent-contact .cc-contact form .cccf-date input {
+  color: black;
+  border: none;
+}
+
+body .contenent-contact .cc-contact form .cccf-button {
+  width: 100%;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body .contenent-contact .cc-contact form .cccf-button input {
+  color: black;
+  border-radius: 5px;
+  border: none;
+  background-color: #E74C3C;
+  width: 120px;
 }
 
 body .contenent-flêche {
