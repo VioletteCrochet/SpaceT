@@ -1,3 +1,8 @@
+* {
+    color: white;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -41,12 +46,14 @@ body {
             }
         }
     }
-    .contenent-presentation {
-        width: 30%;
-        display: block;
+    .contenent-home {
+        width: 100%;
+        display: flex;
         flex-wrap: wrap;
         text-align: center;
-        margin: 230px auto 265px auto;
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
         .c-logo {
             .cl-logo {
                 height: 65px;
@@ -63,17 +70,52 @@ body {
                 border-style: solid;
                 border-width: 3.5px;
                 border-color: #E75343;
+                text-decoration: none;
+            }
+        }
+    }
+    .contenent-présentation {
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        .cp-text {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                font-size: 50px;
+                margin: 0 0 0 40px;
+            }
+            .cpt-text {
+                margin: 10px 150px 0 40px;
+                font-size: 20px;
+            }
+        }
+        .cp-picto {
+            width: 50%;
+            display: flex;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            .cp-img {
+                height: 80%;
+                margin-top: 110px;
             }
         }
     }
     .contenent-flêche {
-        margin: auto 48%;
         position: fixed;
         bottom: 0;
-        width: 30px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
         .fleche {
             width: 30px;
-            width: 100%;
+            height: 30px;
         }
     }
 }
