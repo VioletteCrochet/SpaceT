@@ -115,7 +115,7 @@ body {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            margin: 8% 6% 0 6%;
+            margin: 130px 6% 0 6%;
             .cacT-contant {
                 width: 35%;
                 height: 100%;
@@ -124,6 +124,8 @@ body {
                 background-repeat: no-repeat;
                 border-radius: 15px;
                 background-size: cover;
+                display: flex;
+                align-items: flex-end;
                 .cactc-banner {
                     display: flex;
                     background-color: #000c;
@@ -131,7 +133,7 @@ body {
                     height: 56px;
                     padding: 0 4%;
                     border-radius: 0 0 15px 15px;
-                    margin-top: 42.5%;
+                    overflow: hidden;
                     h2 {
                         margin: auto;
                         font-size: 20px;
@@ -157,6 +159,8 @@ body {
                 background-repeat: no-repeat;
                 border-radius: 15px;
                 background-size: cover;
+                display: flex;
+                align-items: flex-end;
                 .cacbc-banner {
                     display: flex;
                     background-color: #000c;
@@ -164,7 +168,7 @@ body {
                     height: 56px;
                     padding: 0 4%;
                     border-radius: 0 0 15px 15px;
-                    margin-top: 42.5%;
+                    overflow: hidden;
                     h2 {
                         margin: auto;
                         font-size: 20px;

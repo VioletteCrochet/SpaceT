@@ -167,7 +167,7 @@ body .contenent-actualités .ca-contentTop {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 8% 6% 0 6%;
+  margin: 130px 6% 0 6%;
 }
 
 body .contenent-actualités .ca-contentTop .cacT-contant {
@@ -179,6 +179,12 @@ body .contenent-actualités .ca-contentTop .cacT-contant {
   background-repeat: no-repeat;
   border-radius: 15px;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body .contenent-actualités .ca-contentTop .cacT-contant .cactc-banner {
@@ -190,7 +196,7 @@ body .contenent-actualités .ca-contentTop .cacT-contant .cactc-banner {
   height: 56px;
   padding: 0 4%;
   border-radius: 0 0 15px 15px;
-  margin-top: 42.5%;
+  overflow: hidden;
 }
 
 body .contenent-actualités .ca-contentTop .cacT-contant .cactc-banner h2 {
@@ -224,6 +230,12 @@ body .contenent-actualités .ca-contentBottom .cacB-contant {
   background-repeat: no-repeat;
   border-radius: 15px;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner {
@@ -235,7 +247,7 @@ body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner {
   height: 56px;
   padding: 0 4%;
   border-radius: 0 0 15px 15px;
-  margin-top: 42.5%;
+  overflow: hidden;
 }
 
 body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner h2 {
