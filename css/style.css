@@ -50,10 +50,6 @@ body nav ul {
   display: flex;
 }
 
-body nav li {
-  margin-left: 50px;
-}
-
 body nav li a {
   display: block;
   color: white;
@@ -149,6 +145,107 @@ body .contenent-présentation .cp-picto {
 body .contenent-présentation .cp-picto .cp-img {
   height: 80%;
   margin-top: 110px;
+  width: 300px;
+}
+
+body .contenent-actualités {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .contenent-actualités .ca-contentTop {
+  height: 35%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8% 6% 0 6%;
+}
+
+body .contenent-actualités .ca-contentTop .cacT-contant {
+  width: 35%;
+  height: 100%;
+  background-image: url(../img/articles_img.jpg);
+  -webkit-box-shadow: #4a4a4a 0px 0px 20px 3px;
+          box-shadow: #4a4a4a 0px 0px 20px 3px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+}
+
+body .contenent-actualités .ca-contentTop .cacT-contant .cactc-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000c;
+  width: 92%;
+  height: 56px;
+  padding: 0 4%;
+  border-radius: 0 0 15px 15px;
+  margin-top: 42.5%;
+}
+
+body .contenent-actualités .ca-contentTop .cacT-contant .cactc-banner h2 {
+  margin: auto;
+  font-size: 20px;
+}
+
+body .contenent-actualités .ca-contentTop .cacT-contant .cactc-banner p {
+  font-size: 12px;
+  margin: auto auto auto 25px;
+}
+
+body .contenent-actualités .ca-contentBottom {
+  height: 35%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 6% 0 6%;
+}
+
+body .contenent-actualités .ca-contentBottom .cacB-contant {
+  width: 35%;
+  height: 100%;
+  background-image: url(../img/articles_img.jpg);
+  -webkit-box-shadow: #4a4a4a 0px 0px 20px 3px;
+          box-shadow: #4a4a4a 0px 0px 20px 3px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+}
+
+body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000c;
+  width: 92%;
+  height: 56px;
+  padding: 0 4%;
+  border-radius: 0 0 15px 15px;
+  margin-top: 42.5%;
+}
+
+body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner h2 {
+  margin: auto;
+  font-size: 20px;
+}
+
+body .contenent-actualités .ca-contentBottom .cacB-contant .cacbc-banner p {
+  font-size: 12px;
+  margin: auto auto auto 25px;
 }
 
 body .contenent-flêche {
