@@ -12,44 +12,102 @@
 
 <body>
     <nav>
-        <a class="n-logo" href="#"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
-
+        <a class="n-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
         <ul>
             <li>
-                <a href="#">Présentation</a>
+                <a href="#pagePresentation">Présentation</a>
             </li>
             <li>
-                <a href="#">Actualités</a>
+                <a href="#pageActualités">Actualités</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#pageContact">Contact</a>
             </li>
         </ul>
     </nav>
 
 
-    <div class="contenent-presentation">
+    <div class="contenent-home" id="pageHome">
         <div class="c-logo">
             <img class="cl-logo" src="img/logo_spacet.png" alt="logo-spacet">
         </div>
         <div class="c-bouton">
-            <button class="cb-bouton">Découvrez le futur du voyage</button>
+            <a class="cb-bouton" href="#pagePresentation">Découvrez le futur du voyage</a>
         </div>
     </div>
 
 
-    <div class="contenent-presentation">
-        <div class="c-logo">
-            <img class="cl-logo" src="img/logo_spacet.png" alt="logo-spacet">
+    <div class="contenent-présentation" id="pagePresentation">
+        <div class="cp-text">
+            <h1>TITRE</h1>
+            <p class="cpt-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat id tempore modi
+                nesciunt aspernatur
+                possimus dolorem quo libero asperiores, ipsum cumque odit nihil eveniet ipsam aliquam rerum obcaecati!</p>
         </div>
-        <div class="c-bouton">
-            <button class="cb-bouton">Découvrez le futur du voyage</button>
+        <div class="cp-picto">
+            <img class="cp-img" src="img/app_presentation.png" alt="logo-spacet">
         </div>
     </div>
+
+
+    <div class="contenent-actualités" id="pageActualités">
+        <div class="ca-contentTop">
+            <div class="cacT-contant">
+                <div class="cactc-banner">
+                    <h2>TITLE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
+                        fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
+                </div>
+            </div>
+            <div class="cacT-contant">
+                <div class="cactc-banner">
+                    <h2>TITLE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
+                        fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ca-contentBottom">
+            <div class="cacB-contant">
+                <div class="cacbc-banner">
+                    <h2>TITLE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
+                        fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
+                </div>
+            </div>
+            <div class="cacB-contant">
+                <div class="cacbc-banner">
+                    <h2>TITLE</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
+                        fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contenent-contact" id="pageContact">
+        <div class="cc-contact">
+            <form action="">
+                <h2>CONTACTEZ-NOUS</h2>
+                <div class="cccf-barre"></div>
+                <div class="cccf-name"><img src="img/user-solid.svg" alt="logo-spacet"><input type="text"></div>
+                <div class="cccf-mail"><img src="img/at-solid.svg" alt="logo-spacet"><input type="text"></div>
+                <div class="cccf-date"><img src="img/calendar-alt-regular.svg" alt="logo-spacet"><input type="date"></div>
+                <div class="cccf-button"><input type="submit" value="Envoyer"></div>
+            </form>
+        </div>
+    </div>
+    <!--
+opacite black
+color opacity 0.7
+intensité du flou 25
+luminosité -3
+-->
 
 
     <div class="contenent-flêche">
-        <a href="#"><img class="fleche" src="img/chevron-down-solid.svg" alt="picto-flêche"></a>
+        <a href="#pageHome"><img class="fleche" src="img/chevron-down-solid.svg" alt="picto-flêche"></a>
     </div>
 </body>
 

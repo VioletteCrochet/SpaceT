@@ -1,3 +1,8 @@
+* {
+    color: white;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -31,7 +36,6 @@ body {
             display: flex;
         }
         li {
-            margin-left: 50px;
             a {
                 display: block;
                 color: white;
@@ -41,12 +45,14 @@ body {
             }
         }
     }
-    .contenent-presentation {
-        width: 30%;
-        display: block;
+    .contenent-home {
+        width: 100%;
+        display: flex;
         flex-wrap: wrap;
         text-align: center;
-        margin: 230px auto 265px auto;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
         .c-logo {
             .cl-logo {
                 height: 65px;
@@ -63,17 +69,234 @@ body {
                 border-style: solid;
                 border-width: 3.5px;
                 border-color: #E75343;
+                text-decoration: none;
+            }
+        }
+    }
+    .contenent-présentation {
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        .cp-text {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                font-size: 50px;
+                margin: 0 0 0 40px;
+            }
+            .cpt-text {
+                margin: 10px 150px 0 40px;
+                font-size: 20px;
+            }
+        }
+        .cp-picto {
+            width: 50%;
+            display: flex;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            .cp-img {
+                height: 80%;
+                margin-top: 110px;
+                width: 300px;
+            }
+        }
+    }
+    .contenent-actualités {
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        flex-wrap: wrap;
+        .ca-contentTop {
+            height: 35%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 130px 6% 0 6%;
+            .cacT-contant {
+                width: 35%;
+                height: 100%;
+                background-image: url(../img/articles_img.jpg);
+                box-shadow: #4a4a4a 0px 0px 20px 3px;
+                background-repeat: no-repeat;
+                border-radius: 15px;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                .cactc-banner {
+                    display: flex;
+                    background-color: #000c;
+                    width: 92%;
+                    height: 56px;
+                    padding: 0 4%;
+                    border-radius: 0 0 15px 15px;
+                    overflow: hidden;
+                    h2 {
+                        margin: auto;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin: auto auto auto 25px;
+                    }
+                }
+            }
+        }
+        .ca-contentBottom {
+            height: 35%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 6% 0 6%;
+            .cacB-contant {
+                width: 35%;
+                height: 100%;
+                background-image: url(../img/articles_img.jpg);
+                box-shadow: #4a4a4a 0px 0px 20px 3px;
+                background-repeat: no-repeat;
+                border-radius: 15px;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                .cacbc-banner {
+                    display: flex;
+                    background-color: #000c;
+                    width: 92%;
+                    height: 56px;
+                    padding: 0 4%;
+                    border-radius: 0 0 15px 15px;
+                    overflow: hidden;
+                    h2 {
+                        margin: auto;
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 12px;
+                        margin: auto auto auto 25px;
+                    }
+                }
+            }
+        }
+    }
+    .contenent-contact {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .cc-contact {
+            width: 600px;
+            height: 70%;
+            background-image: url(../img/desktop_wp_flou.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0px 0px 54px 0px #c0c0c0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            margin-top: 35px;
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 76%;
+                width: 400px;
+                justify-content: space-between;
+                padding: 10% 0;
+                h2 {
+                    margin: 0;
+                }
+                .cccf-barre {
+                    width: 60%;
+                    height: 1px;
+                    background-color: white;
+                    border: 1px solid;
+                    border-color: white;
+                }
+                .cccf-name {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    background-color: white;
+                    align-items: center;
+                    border-radius: 5px;
+                    img {
+                        height: 26px;
+                        margin: 0 10px 0 10px;
+                    }
+                    input {
+                        color: black;
+                        text-align: center;
+                        border: none;
+                        width: 87%;
+                    }
+                }
+                .cccf-mail {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    background-color: white;
+                    align-items: center;
+                    border-radius: 5px;
+                    img {
+                        height: 26px;
+                        margin: 0 10px 0 10px;
+                    }
+                    input {
+                        color: black;
+                        text-align: center;
+                        border: none;
+                        width: 86%;
+                    }
+                }
+                .cccf-date {
+                    width: 100%;
+                    height: 30px;
+                    display: flex;
+                    background-color: white;
+                    align-items: center;
+                    border-radius: 5px;
+                    img {
+                        height: 26px;
+                        margin: 0 110px 0 10px;
+                    }
+                    input {
+                        color: black;
+                        border: none;
+                    }
+                }
+                .cccf-button {
+                    width: 100%;
+                    height: 25px;
+                    display: flex;
+                    justify-content: end;
+                    input {
+                        color: black;
+                        border-radius: 5px;
+                        border: none;
+                        background-color: #E74C3C;
+                        width: 120px;
+                    }
+                }
             }
         }
     }
     .contenent-flêche {
-        margin: auto 48%;
         position: fixed;
         bottom: 0;
-        width: 30px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
         .fleche {
             width: 30px;
-            width: 100%;
+            height: 30px;
         }
     }
 }
