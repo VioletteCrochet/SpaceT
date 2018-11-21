@@ -1,27 +1,31 @@
 @charset "UTF-8";
 body {
-  font-family: Helvetica;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/desktop_wp.jpg") no-repeat;
+  background-image: url("../img/desktop_wp.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 body nav {
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  padding-left: 20px;
+  padding: 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  background: black;
+  background: #0F1113;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 body nav .n-logo {
   width: 250px;
+  margin: auto 0;
 }
 
 body nav img {
@@ -32,45 +36,60 @@ body nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 78%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body nav li {
-  float: right;
+  margin-left: 50px;
 }
 
 body nav li a {
   display: block;
   color: white;
-  text-align: center;
-  margin: 30px;
+  margin: 25px;
   text-decoration: none;
+  font-size: 22px;
 }
 
 body .contenent-presentation {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
+  text-align: center;
+  margin: 230px auto 265px auto;
 }
 
 body .contenent-presentation .c-logo .cl-logo {
-  width: 300px;
+  height: 65px;
+}
+
+body .contenent-presentation .c-bouton {
+  margin-top: 25px;
+}
+
+body .contenent-presentation .c-bouton .cb-bouton {
+  border-radius: 15px;
+  background: transparent;
+  color: white;
+  font-size: 27px;
+  padding: 10px 25px;
+  border-style: solid;
+  border-width: 3.5px;
+  border-color: #E75343;
 }
 
 body .contenent-flêche {
   margin: auto 48%;
   position: fixed;
   bottom: 0;
+  width: 30px;
 }
 
 body .contenent-flêche .fleche {
