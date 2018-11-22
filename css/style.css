@@ -276,7 +276,7 @@ body .contenent-contact {
 
 body .contenent-contact .cc-contact {
   width: 600px;
-  height: 70%;
+  height: 68%;
   background-image: url(../img/desktop_wp_flou.png);
   background-position: center;
   background-size: cover;
@@ -328,7 +328,7 @@ body .contenent-contact .cc-contact form .cccf-barre {
 }
 
 body .contenent-contact .cc-contact form .cccf-name {
-  width: 100%;
+  width: 80%;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,11 +337,11 @@ body .contenent-contact .cc-contact form .cccf-name {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 body .contenent-contact .cc-contact form .cccf-name img {
-  height: 26px;
+  height: 23px;
   margin: 0 10px 0 10px;
 }
 
@@ -353,7 +353,7 @@ body .contenent-contact .cc-contact form .cccf-name input {
 }
 
 body .contenent-contact .cc-contact form .cccf-mail {
-  width: 100%;
+  width: 80%;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,11 +362,11 @@ body .contenent-contact .cc-contact form .cccf-mail {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 body .contenent-contact .cc-contact form .cccf-mail img {
-  height: 26px;
+  height: 23px;
   margin: 0 10px 0 10px;
 }
 
@@ -378,7 +378,7 @@ body .contenent-contact .cc-contact form .cccf-mail input {
 }
 
 body .contenent-contact .cc-contact form .cccf-date {
-  width: 100%;
+  width: 80%;
   height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,12 +387,12 @@ body .contenent-contact .cc-contact form .cccf-date {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 body .contenent-contact .cc-contact form .cccf-date img {
-  height: 26px;
-  margin: 0 110px 0 10px;
+  height: 23px;
+  margin: 0 74px 0 10px;
 }
 
 body .contenent-contact .cc-contact form .cccf-date input {
@@ -401,7 +401,7 @@ body .contenent-contact .cc-contact form .cccf-date input {
 }
 
 body .contenent-contact .cc-contact form .cccf-button {
-  width: 100%;
+  width: 80%;
   height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,7 +412,7 @@ body .contenent-contact .cc-contact form .cccf-button {
 }
 
 body .contenent-contact .cc-contact form .cccf-button input {
-  color: black;
+  color: white;
   border-radius: 5px;
   border: none;
   background-color: #E74C3C;
