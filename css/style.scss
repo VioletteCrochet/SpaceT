@@ -189,7 +189,7 @@ body {
         align-items: center;
         .cc-contact {
             width: 600px;
-            height: 70%;
+            height: 68%;
             background-image: url(../img/desktop_wp_flou.png);
             background-position: center;
             background-size: cover;
@@ -219,51 +219,51 @@ body {
                     border-color: white;
                 }
                 .cccf-name {
-                    width: 100%;
+                    width: 80%;
                     height: 30px;
                     display: flex;
                     background-color: white;
                     align-items: center;
-                    border-radius: 5px;
+                    border-radius: 8px;
                     img {
-                        height: 26px;
+                        height: 23px;
                         margin: 0 10px 0 10px;
                     }
                     input {
                         color: black;
                         text-align: center;
                         border: none;
-                        width: 87%;
+                        width: 75%;
                     }
                 }
                 .cccf-mail {
-                    width: 100%;
+                    width: 80%;
                     height: 30px;
                     display: flex;
                     background-color: white;
                     align-items: center;
-                    border-radius: 5px;
+                    border-radius: 8px;
                     img {
-                        height: 26px;
+                        height: 23px;
                         margin: 0 10px 0 10px;
                     }
                     input {
                         color: black;
                         text-align: center;
                         border: none;
-                        width: 86%;
+                        width: 75%;
                     }
                 }
                 .cccf-date {
-                    width: 100%;
+                    width: 80%;
                     height: 30px;
                     display: flex;
                     background-color: white;
                     align-items: center;
-                    border-radius: 5px;
+                    border-radius: 8px;
                     img {
-                        height: 26px;
-                        margin: 0 110px 0 10px;
+                        height: 23px;
+                        margin: 0 74px 0 10px;
                     }
                     input {
                         color: black;
@@ -271,12 +271,12 @@ body {
                     }
                 }
                 .cccf-button {
-                    width: 100%;
+                    width: 80%;
                     height: 25px;
                     display: flex;
                     justify-content: end;
                     input {
-                        color: black;
+                        color: white;
                         border-radius: 5px;
                         border: none;
                         background-color: #E74C3C;
