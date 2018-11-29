@@ -4,28 +4,37 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <title>SpaceT</title>
 
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/arrow.js"></script>
+
 </head>
 
 
 <body>
-    <nav>
-        <a class="n-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
-        <ul>
-            <li>
-                <a id="nav-link" href="#pagePresentation">Présentation</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#pageActualités">Actualités</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#pageContact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="mobile-container">
+        <nav id="nav">
+            <a class="n-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
+            <ul id="lp-n-links">
+                <li>
+                    <a id="nav-link" href="#pagePresentation">Présentation</a>
+                </li>
+                <li>
+                    <a id="nav-link" href="#pageActualités">Actualités</a>
+                </li>
+                <li>
+                    <a id="nav-link" href="#pageContact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
 
 
     <div class="contenent-home" id="pageHome">
@@ -52,32 +61,32 @@
 
 
     <div class="contenent-actualités" id="pageActualités">
-        <div class="ca-contentTop">
-            <div class="cacT-contant">
-                <div class="cactc-banner">
+        <div class="ca-contentLeft">
+            <div class="cacL-contant">
+                <div class="caclc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
                 </div>
             </div>
-            <div class="cacT-contant">
-                <div class="cactc-banner">
+            <div class="cacL-contant">
+                <div class="caclc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
                 </div>
             </div>
         </div>
-        <div class="ca-contentBottom">
-            <div class="cacB-contant">
-                <div class="cacbc-banner">
+        <div class="ca-contentRight">
+            <div class="cacR-contant">
+                <div class="cacrc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
                 </div>
             </div>
-            <div class="cacB-contant">
-                <div class="cacbc-banner">
+            <div class="cacR-contant">
+                <div class="cacrc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
@@ -99,12 +108,6 @@
             </form>
         </div>
     </div>
-    <!--
-opacite black
-color opacity 0.7
-intensité du flou 25
-luminosité -3
--->
 
 
     <div class="contenent-flêche">

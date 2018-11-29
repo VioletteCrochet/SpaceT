@@ -1,128 +1,183 @@
 * {
-    color: white;
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/desktop_wp.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    nav {
-        padding: 0 40px;
-        display: flex;
-        height: 80px;
-        background: #0F1113;
-        position: sticky;
-        top: 0;
-        .n-logo {
-            width: 250px;
-            margin: auto 0;
-        }
-        img {
-            width: 200px;
-        }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 78%;
-            justify-content: flex-end;
-            display: flex;
-        }
-        li {
-            a {
-                display: block;
-                color: white;
-                margin: 25px;
-                text-decoration: none;
-                font-size: 22px;
-                padding: 0px 8px 4px 8px ;
-                &.actif{
-                    border-bottom: 4px solid #e74c3c;
+@media screen and (max-width: 769px) {
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/desktop_wp.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        .mobile-container {
+            position: sticky;
+            top: 0;
+            #nav {
+                padding: 0 30px;
+                display: flex;
+                height: 80px;
+                background: #0F1113;
+                .n-logo {
+                    width: 180px;
+                    margin: auto 0;
+                    img {
+                        width: 180px;
+                    }
+                }
+                #lp-n-links {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 78%;
+                    justify-content: flex-end;
+                    display: flex;
+                    display: none;
+                    li {
+                        a {
+                            display: block;
+                            color: white;
+                            margin: 25px;
+                            text-decoration: none;
+                            font-size: 22px;
+                            padding: 0px 8px 4px 8px;
+                            &.actif {
+                                border-bottom: 4px solid #e74c3c;
+                            }
+                        }
+                    }
+                }
+                .icon {
+                    color: #E75343;
+                    text-decoration: none;
+                    font-size: 30px;
+                    display: block;
+                    width: 30px;
+                    margin: auto 0 auto auto;
                 }
             }
         }
-    }
-    .contenent-home {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        .c-logo {
-            .cl-logo {
-                height: 65px;
-            }
-        }
-        .c-bouton {
-            margin-top: 25px;
-            .cb-bouton {
-                border-radius: 15px;
-                background: transparent;
-                color: white;
-                font-size: 27px;
-                padding: 10px 25px;
-                border-style: solid;
-                border-width: 3.5px;
-                border-color: #E75343;
-                text-decoration: none;
-            }
-        }
-    }
-    .contenent-présentation {
-        width: 100%;
-        display: flex;
-        height: 100vh;
-        .cp-text {
-            width: 50%;
-            margin: auto;
+        .contenent-home {
+            width: 100%;
             display: flex;
-            justify-content: center;
-            flex-direction: column;
-            h1 {
-                font-size: 50px;
-                margin: 0 0 0 40px;
-            }
-            .cpt-text {
-                margin: 10px 150px 0 40px;
-                font-size: 20px;
-            }
-        }
-        .cp-picto {
-            width: 50%;
-            display: flex;
+            flex-wrap: wrap;
             text-align: center;
-            align-content: center;
+            height: 100vh;
+            flex-direction: column;
             justify-content: center;
-            .cp-img {
-                height: 80%;
+            .c-logo {
+                .cl-logo {
+                    width: 200px;
+                }
+            }
+            .c-bouton {
+                margin-top: 40px;
+                .cb-bouton {
+                    border-radius: 25px;
+                    background: transparent;
+                    color: white;
+                    font-size: 18px;
+                    padding: 10px 25px;
+                    border-style: solid;
+                    border-width: 3.5px;
+                    border-color: #E75343;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+        .contenent-présentation {
+            width: 100%;
+            height: 100vh;
+            color: white;
+            padding-top: 100px;
+            .cp-text {
+                width: 90%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 196px;
+                h1 {
+                    font-size: 50px;
+                    margin: auto;
+                }
+                .cpt-text {
+                    font-size: 15px;
+                }
+            }
+            .cp-picto {
+                width: 63%;
+                display: flex;
+                text-align: center;
+                margin: auto;
+                justify-content: center;
+                .cp-img {
+                    height: 80%;
+                    width: 300px;
+                }
+            }
+        }
+        .contenent-actualités {
+            color: white;
+            width: 100%;
+            height: 200vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ca-contentLeft {
+                width: 85%;
+                height: 680px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
                 margin-top: 110px;
-                width: 300px;
+                margin-bottom: 50px;
+                .cacL-contant {
+                    width: 100%;
+                    height: 48%;
+                    background-image: url(../img/articles_img.jpg);
+                    box-shadow: #4a4a4a 0px 0px 20px 3px;
+                    background-repeat: no-repeat;
+                    border-radius: 15px;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    background-position: center;
+                    .caclc-banner {
+                        display: flex;
+                        background-color: #000c;
+                        width: 92%;
+                        height: 56px;
+                        padding: 0 4%;
+                        border-radius: 0 0 15px 15px;
+                        h2 {
+                            margin: auto;
+                            font-size: 25px;
+                        }
+                        p {
+                            font-size: 13px;
+                            margin: auto auto auto 25px;
+                            height: 40px;
+                            overflow: hidden;
+                            font-weight: bold;
+                        }
+                    }
+                }
             }
         }
-    }
-    .contenent-actualités {
-        width: 100%;
-        display: flex;
-        height: 100vh;
-        flex-wrap: wrap;
-        .ca-contentTop {
-            height: 35%;
-            width: 100%;
+        .ca-contentRight {
+            width: 85%;
+            height: 680px;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            margin: 130px 6% 0 6%;
-            .cacT-contant {
-                width: 35%;
-                height: 100%;
+            .cacR-contant {
+                width: 100%;
+                height: 48%;
                 background-image: url(../img/articles_img.jpg);
                 box-shadow: #4a4a4a 0px 0px 20px 3px;
                 background-repeat: no-repeat;
@@ -130,7 +185,9 @@ body {
                 background-size: cover;
                 display: flex;
                 align-items: flex-end;
-                .cactc-banner {
+                background-position: center;
+                margin-top: 22px;
+                .cacrc-banner {
                     display: flex;
                     background-color: #000c;
                     width: 92%;
@@ -140,167 +197,438 @@ body {
                     overflow: hidden;
                     h2 {
                         margin: auto;
-                        font-size: 20px;
+                        font-size: 25px;
                     }
                     p {
                         font-size: 12px;
                         margin: auto auto auto 25px;
+                        height: 40px;
+                        overflow: hidden;
                     }
                 }
             }
         }
-        .ca-contentBottom {
-            height: 35%;
+        .contenent-contact {
             width: 100%;
-            display: flex;
-            justify-content: space-between;
-            margin: 0 6% 0 6%;
-            .cacB-contant {
-                width: 35%;
-                height: 100%;
-                background-image: url(../img/articles_img.jpg);
-                box-shadow: #4a4a4a 0px 0px 20px 3px;
-                background-repeat: no-repeat;
-                border-radius: 15px;
-                background-size: cover;
-                display: flex;
-                align-items: flex-end;
-                .cacbc-banner {
-                    display: flex;
-                    background-color: #000c;
-                    width: 92%;
-                    height: 56px;
-                    padding: 0 4%;
-                    border-radius: 0 0 15px 15px;
-                    overflow: hidden;
-                    h2 {
-                        margin: auto;
-                        font-size: 20px;
-                    }
-                    p {
-                        font-size: 12px;
-                        margin: auto auto auto 25px;
-                    }
-                }
-            }
-        }
-    }
-    .contenent-contact {
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .cc-contact {
-            width: 600px;
-            height: 68%;
-            background-image: url(../img/desktop_wp_flou.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            box-shadow: 0px 0px 54px 0px #c0c0c0;
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 25px;
-            margin-top: 35px;
-            form {
+            color: white;
+            .cc-contact {
+                width: 90%;
+                height: 68%;
+                background-image: url(../img/desktop_wp_flou.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 0px 0px 54px 0px #c0c0c0;
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                height: 76%;
-                width: 400px;
-                justify-content: space-between;
-                padding: 10% 0;
-                h2 {
-                    margin: 0;
-                }
-                .cccf-barre {
-                    width: 60%;
-                    height: 1px;
-                    background-color: white;
-                    border: 1px solid;
-                    border-color: white;
-                }
-                .cccf-name {
-                    width: 80%;
-                    height: 30px;
+                border-radius: 25px;
+                margin-top: 35px;
+                form {
                     display: flex;
-                    background-color: white;
+                    flex-direction: column;
                     align-items: center;
-                    border-radius: 8px;
-                    img {
-                        height: 23px;
-                        margin: 0 10px 0 10px;
+                    height: 76%;
+                    width: 400px;
+                    justify-content: space-between;
+                    padding: 10% 0;
+                    h2 {
+                        margin: 0;
                     }
-                    input {
-                        color: black;
-                        text-align: center;
-                        border: none;
-                        width: 75%;
+                    .cccf-barre {
+                        width: 60%;
+                        height: 1px;
+                        background-color: white;
+                        border: 1px solid;
+                        border-color: white;
                     }
-                }
-                .cccf-mail {
-                    width: 80%;
-                    height: 30px;
-                    display: flex;
-                    background-color: white;
-                    align-items: center;
-                    border-radius: 8px;
-                    img {
-                        height: 23px;
-                        margin: 0 10px 0 10px;
+                    .cccf-name {
+                        width: 80%;
+                        height: 30px;
+                        display: flex;
+                        background-color: white;
+                        align-items: center;
+                        border-radius: 12px;
+                        img {
+                            height: 23px;
+                            margin: 0 10px 0 10px;
+                        }
+                        input {
+                            color: black;
+                            text-align: center;
+                            border: none;
+                            width: 75%;
+                        }
                     }
-                    input {
-                        color: black;
-                        text-align: center;
-                        border: none;
-                        width: 75%;
+                    .cccf-mail {
+                        width: 80%;
+                        height: 30px;
+                        display: flex;
+                        background-color: white;
+                        align-items: center;
+                        border-radius: 12px;
+                        img {
+                            height: 23px;
+                            margin: 0 10px 0 10px;
+                        }
+                        input {
+                            color: black;
+                            text-align: center;
+                            border: none;
+                            width: 75%;
+                        }
                     }
-                }
-                .cccf-date {
-                    width: 80%;
-                    height: 30px;
-                    display: flex;
-                    background-color: white;
-                    align-items: center;
-                    border-radius: 8px;
-                    img {
-                        height: 23px;
-                        margin: 0 74px 0 10px;
+                    .cccf-date {
+                        width: 80%;
+                        height: 30px;
+                        display: flex;
+                        background-color: white;
+                        align-items: center;
+                        border-radius: 12x;
+                        img {
+                            height: 23px;
+                            margin: 0 74px 0 10px;
+                        }
+                        input {
+                            color: black;
+                            border: none;
+                        }
                     }
-                    input {
-                        color: black;
-                        border: none;
-                    }
-                }
-                .cccf-button {
-                    width: 80%;
-                    height: 25px;
-                    display: flex;
-                    justify-content: end;
-                    input {
-                        color: white;
-                        border-radius: 5px;
-                        border: none;
-                        background-color: #E74C3C;
-                        width: 120px;
+                    .cccf-button {
+                        width: 80%;
+                        height: 25px;
+                        display: flex;
+                        justify-content: end;
+                        input {
+                            color: white;
+                            border-radius: 10px;
+                            border: none;
+                            background-color: #E74C3C;
+                            width: 120px;
+                        }
                     }
                 }
             }
         }
+        .contenent-flêche {
+            display: none;
+            .fleche {}
+        }
     }
-    .contenent-flêche {
-        position: fixed;
-        bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+    * {
+        scroll-behavior: smooth;
+        color: white;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
         width: 100%;
-        height: 30px;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        .fleche {
-            width: 30px;
+        height: 100%;
+        background-image: url("../img/desktop_wp.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        .mobile-container {
+            position: sticky;
+            top: 0;
+            #nav {
+                padding: 0 40px;
+                display: flex;
+                height: 80px;
+                background: #0F1113;
+                .n-logo {
+                    width: 250px;
+                    margin: auto 0;
+                    img {
+                        width: 200px;
+                    }
+                }
+                #lp-n-links {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    width: 78%;
+                    justify-content: flex-end;
+                    display: flex;
+                    li {
+                        a {
+                            display: block;
+                            color: white;
+                            margin: 25px;
+                            text-decoration: none;
+                            font-size: 22px;
+                            padding: 0px 8px 4px 8px;
+                            &.actif {
+                                border-bottom: 4px solid #e74c3c;
+                            }
+                        }
+                    }
+                }
+                .icon {
+                    display: none;
+                }
+            }
+        }
+        .contenent-home {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            .c-logo {
+                .cl-logo {
+                    height: 65px;
+                }
+            }
+            .c-bouton {
+                margin-top: 25px;
+                .cb-bouton {
+                    border-radius: 15px;
+                    background: transparent;
+                    color: white;
+                    font-size: 27px;
+                    padding: 10px 25px;
+                    border-style: solid;
+                    border-width: 3.5px;
+                    border-color: #E75343;
+                    text-decoration: none;
+                }
+            }
+        }
+        .contenent-présentation {
+            width: 100%;
+            display: flex;
+            height: 100vh;
+            .cp-text {
+                width: 50%;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h1 {
+                    font-size: 50px;
+                    margin: 0 0 0 40px;
+                }
+                .cpt-text {
+                    margin: 10px 150px 0 40px;
+                    font-size: 20px;
+                }
+            }
+            .cp-picto {
+                width: 50%;
+                display: flex;
+                text-align: center;
+                align-content: center;
+                justify-content: center;
+                .cp-img {
+                    height: 80%;
+                    margin-top: 110px;
+                    width: 300px;
+                }
+            }
+        }
+        .contenent-actualités {
+            width: 86%;
+            height: 100vh;
+            display: flex;
+            padding: 0px 7%;
+            .ca-contentLeft {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 135px 0 70px 0;
+                .cacL-contant {
+                    width: 80%;
+                    height: 45%;
+                    background-image: url(../img/articles_img.jpg);
+                    box-shadow: #4a4a4a 0px 0px 20px 3px;
+                    background-repeat: no-repeat;
+                    border-radius: 15px;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    .caclc-banner {
+                        display: flex;
+                        background-color: #000c;
+                        width: 92%;
+                        height: 56px;
+                        padding: 0 4%;
+                        border-radius: 0 0 15px 15px;
+                        overflow: hidden;
+                        h2 {
+                            margin: auto;
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 12px;
+                            margin: auto auto auto 25px;
+                        }
+                    }
+                }
+            }
+            .ca-contentRight {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: self-end;
+                padding: 135px 0 70px 0;
+                .cacR-contant {
+                    width: 80%;
+                    height: 45%;
+                    background-image: url(../img/articles_img.jpg);
+                    box-shadow: #4a4a4a 0px 0px 20px 3px;
+                    background-repeat: no-repeat;
+                    border-radius: 15px;
+                    background-size: cover;
+                    display: flex;
+                    align-items: flex-end;
+                    .cacrc-banner {
+                        display: flex;
+                        background-color: #000c;
+                        width: 92%;
+                        height: 56px;
+                        padding: 0 4%;
+                        border-radius: 0 0 15px 15px;
+                        overflow: hidden;
+                        h2 {
+                            margin: auto;
+                            font-size: 20px;
+                        }
+                        p {
+                            font-size: 12px;
+                            margin: auto auto auto 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .contenent-contact {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cc-contact {
+                width: 600px;
+                height: 68%;
+                background-image: url(../img/desktop_wp_flou.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: 0px 0px 54px 0px #c0c0c0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+                margin-top: 35px;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 76%;
+                    width: 400px;
+                    justify-content: space-between;
+                    padding: 10% 0;
+                    h2 {
+                        margin: 0;
+                    }
+                    .cccf-barre {
+                        width: 60%;
+                        height: 1px;
+                        background-color: white;
+                        border: 1px solid;
+                        border-color: white;
+                    }
+                    .cccf-name {
+                        width: 80%;
+                        height: 30px;
+                        display: flex;
+                        background-color: white;
+                        align-items: center;
+                        border-radius: 8px;
+                        img {
+                            height: 23px;
+                            margin: 0 10px 0 10px;
+                        }
+                        input {
+                            color: black;
+                            text-align: center;
+                            border: none;
+                            width: 75%;
+                        }
+                    }
+                    .cccf-mail {
+                        width: 80%;
+                        height: 30px;
+                        display: flex;
+                        background-color: white;
+                        align-items: center;
+                        border-radius: 8px;
+                        img {
+                            height: 23px;
+                            margin: 0 10px 0 10px;
+                        }
+                        input {
+                            color: black;
+                            text-align: center;
+                            border: none;
+                            width: 75%;
+                        }
+                    }
+                    .cccf-date {
+                        width: 80%;
+                        height: 30px;
+                        display: flex;
+                        background-color: white;
+                        align-items: center;
+                        border-radius: 8px;
+                        img {
+                            height: 23px;
+                            margin: 0 74px 0 10px;
+                        }
+                        input {
+                            color: black;
+                            border: none;
+                        }
+                    }
+                    .cccf-button {
+                        width: 80%;
+                        height: 25px;
+                        display: flex;
+                        justify-content: end;
+                        input {
+                            color: white;
+                            border-radius: 5px;
+                            border: none;
+                            background-color: #E74C3C;
+                            width: 120px;
+                        }
+                    }
+                }
+            }
+        }
+        .contenent-flêche {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             height: 30px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            .fleche {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }
