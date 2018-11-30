@@ -11,14 +11,35 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/arrow.js"></script>
+    <script src="js/menu_burger.js"></script>
 
 </head>
 
 
 <body>
+    <div class="pc-container">
+        <nav id="pc-nav">
+            <a class="pcn-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
+            <ul id="pcnl-ul">
+                <li>
+                    <a id="nav-li" href="#pagePresentation">Présentation</a>
+                </li>
+                <li>
+                    <a id="nav-li" href="#pageActualités">Actualités</a>
+                </li>
+                <li>
+                    <a id="nav-li" href="#pageContact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="mobile-container">
         <nav id="nav">
             <a class="n-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <ul id="lp-n-links">
                 <li>
                     <a id="nav-link" href="#pagePresentation">Présentation</a>
@@ -30,9 +51,6 @@
                     <a id="nav-link" href="#pageContact">Contact</a>
                 </li>
             </ul>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
         </nav>
     </div>
 
@@ -111,7 +129,7 @@
 
 
     <div class="contenent-flêche">
-        <a href="#pageHome"><img class="fleche" src="img/chevron-down-solid.svg" alt="picto-flêche"></a>
+        <a href="javascript:void(0);" onclick="myFunction()"><img class="fleche" src="img/chevron-down-solid.svg" alt="picto-flêche"></a>
     </div>
 </body>
 

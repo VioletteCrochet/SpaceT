@@ -13,29 +13,43 @@
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
+        .pc-container {
+            display: none;
+        }
         .mobile-container {
             position: sticky;
             top: 0;
             #nav {
-                padding: 0 30px;
                 display: flex;
                 height: 80px;
                 background: #0F1113;
+                flex-wrap: wrap;
                 .n-logo {
                     width: 180px;
-                    margin: auto 0;
+                    margin: 25px 0 0 25px;
                     img {
                         width: 180px;
                     }
                 }
+                .icon {
+                    color: #E75343;
+                    text-decoration: none;
+                    font-size: 40px;
+                    display: block;
+                    width: 27px;
+                    margin: 12px 25px auto auto;
+                }
                 #lp-n-links {
                     list-style-type: none;
-                    margin: 0;
+                    margin: 14px 0 0 0;
                     padding: 0;
-                    width: 78%;
+                    width: 100%;
                     justify-content: flex-end;
                     display: flex;
                     display: none;
+                    text-align: center;
+                    background-color: #E75343;
+                    border-radius: 0 0 25px 25px;
                     li {
                         a {
                             display: block;
@@ -49,14 +63,6 @@
                             }
                         }
                     }
-                }
-                .icon {
-                    color: #E75343;
-                    text-decoration: none;
-                    font-size: 30px;
-                    display: block;
-                    width: 30px;
-                    margin: auto 0 auto auto;
                 }
             }
         }
@@ -288,7 +294,7 @@
                         display: flex;
                         background-color: white;
                         align-items: center;
-                        border-radius: 12x;
+                        border-radius: 12px;
                         img {
                             height: 23px;
                             margin: 0 74px 0 10px;
@@ -336,22 +342,22 @@
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
-        .mobile-container {
+        .pc-container {
             position: sticky;
             top: 0;
-            #nav {
+            #pc-nav {
                 padding: 0 40px;
                 display: flex;
                 height: 80px;
                 background: #0F1113;
-                .n-logo {
+                .pcn-logo {
                     width: 250px;
                     margin: auto 0;
                     img {
                         width: 200px;
                     }
                 }
-                #lp-n-links {
+                #pcnl-ul {
                     list-style-type: none;
                     margin: 0;
                     padding: 0;
@@ -372,10 +378,10 @@
                         }
                     }
                 }
-                .icon {
-                    display: none;
-                }
             }
+        }
+        .mobile-container {
+            display: none;
         }
         .contenent-home {
             width: 100%;

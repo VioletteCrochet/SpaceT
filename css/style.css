@@ -15,31 +15,43 @@
     background-attachment: fixed;
     background-position: center;
   }
+  body .pc-container {
+    display: none;
+  }
   body .mobile-container {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
   body .mobile-container #nav {
-    padding: 0 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 80px;
     background: #0F1113;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   body .mobile-container #nav .n-logo {
     width: 180px;
-    margin: auto 0;
+    margin: 25px 0 0 25px;
   }
   body .mobile-container #nav .n-logo img {
     width: 180px;
   }
+  body .mobile-container #nav .icon {
+    color: #E75343;
+    text-decoration: none;
+    font-size: 40px;
+    display: block;
+    width: 27px;
+    margin: 12px 25px auto auto;
+  }
   body .mobile-container #nav #lp-n-links {
     list-style-type: none;
-    margin: 0;
+    margin: 14px 0 0 0;
     padding: 0;
-    width: 78%;
+    width: 100%;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -47,6 +59,9 @@
     display: -ms-flexbox;
     display: flex;
     display: none;
+    text-align: center;
+    background-color: #E75343;
+    border-radius: 0 0 25px 25px;
   }
   body .mobile-container #nav #lp-n-links li a {
     display: block;
@@ -58,14 +73,6 @@
   }
   body .mobile-container #nav #lp-n-links li a.actif {
     border-bottom: 4px solid #e74c3c;
-  }
-  body .mobile-container #nav .icon {
-    color: #E75343;
-    text-decoration: none;
-    font-size: 30px;
-    display: block;
-    width: 30px;
-    margin: auto 0 auto auto;
   }
   body .contenent-home {
     width: 100%;
@@ -384,7 +391,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    border-radius: 12x;
+    border-radius: 12px;
   }
   body .contenent-contact .cc-contact form .cccf-date img {
     height: 23px;
@@ -432,12 +439,12 @@
     background-attachment: fixed;
     background-position: center;
   }
-  body .mobile-container {
+  body .pc-container {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
   }
-  body .mobile-container #nav {
+  body .pc-container #pc-nav {
     padding: 0 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -445,14 +452,14 @@
     height: 80px;
     background: #0F1113;
   }
-  body .mobile-container #nav .n-logo {
+  body .pc-container #pc-nav .pcn-logo {
     width: 250px;
     margin: auto 0;
   }
-  body .mobile-container #nav .n-logo img {
+  body .pc-container #pc-nav .pcn-logo img {
     width: 200px;
   }
-  body .mobile-container #nav #lp-n-links {
+  body .pc-container #pc-nav #pcnl-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -464,7 +471,7 @@
     display: -ms-flexbox;
     display: flex;
   }
-  body .mobile-container #nav #lp-n-links li a {
+  body .pc-container #pc-nav #pcnl-ul li a {
     display: block;
     color: white;
     margin: 25px;
@@ -472,10 +479,10 @@
     font-size: 22px;
     padding: 0px 8px 4px 8px;
   }
-  body .mobile-container #nav #lp-n-links li a.actif {
+  body .pc-container #pc-nav #pcnl-ul li a.actif {
     border-bottom: 4px solid #e74c3c;
   }
-  body .mobile-container #nav .icon {
+  body .mobile-container {
     display: none;
   }
   body .contenent-home {
