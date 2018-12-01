@@ -136,6 +136,7 @@
   }
   body .contenent-présentation .cp-text .cpt-text {
     font-size: 15px;
+    overflow: hidden;
   }
   body .contenent-présentation .cp-picto {
     width: 63%;
@@ -149,8 +150,7 @@
             justify-content: center;
   }
   body .contenent-présentation .cp-picto .cp-img {
-    height: 80%;
-    width: 300px;
+    width: 240px;
   }
   body .contenent-actualités {
     color: white;
@@ -562,8 +562,7 @@
   }
   body .contenent-présentation .cp-picto .cp-img {
     height: 80%;
-    margin-top: 110px;
-    width: 300px;
+    margin: 110px auto auto auto;
   }
   body .contenent-actualités {
     width: 86%;

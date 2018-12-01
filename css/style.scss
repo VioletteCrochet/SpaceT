@@ -113,6 +113,7 @@
                 }
                 .cpt-text {
                     font-size: 15px;
+                    overflow: hidden;
                 }
             }
             .cp-picto {
@@ -122,8 +123,7 @@
                 margin: auto;
                 justify-content: center;
                 .cp-img {
-                    height: 80%;
-                    width: 300px;
+                    width: 240px;
                 }
             }
         }
@@ -438,8 +438,7 @@
                 justify-content: center;
                 .cp-img {
                     height: 80%;
-                    margin-top: 110px;
-                    width: 300px;
+                    margin: 110px auto auto auto;
                 }
             }
         }
