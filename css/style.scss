@@ -17,8 +17,9 @@
             display: none;
         }
         .mobile-container {
-            position: sticky;
+            position: fixed;
             top: 0;
+            width: 100%;
             #nav {
                 display: flex;
                 height: 80px;
@@ -99,7 +100,7 @@
             width: 100%;
             height: 100vh;
             color: white;
-            padding-top: 100px;
+            padding-top: 75px;
             .cp-text {
                 width: 90%;
                 margin: auto;
@@ -122,6 +123,7 @@
                 text-align: center;
                 margin: auto;
                 justify-content: center;
+                margin-top: 20px;
                 .cp-img {
                     width: 240px;
                 }
@@ -322,7 +324,6 @@
         }
         .contenent-flêche {
             display: none;
-            .fleche {}
         }
     }
 }
@@ -343,8 +344,9 @@
         background-attachment: fixed;
         background-position: center;
         .pc-container {
-            position: sticky;
+            position: fixed;
             top: 0;
+            width: 100%;
             #pc-nav {
                 padding: 0 40px;
                 display: flex;

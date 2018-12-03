@@ -19,9 +19,9 @@
     display: none;
   }
   body .mobile-container {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
   }
   body .mobile-container #nav {
     display: -webkit-box;
@@ -113,7 +113,7 @@
     width: 100%;
     height: 100vh;
     color: white;
-    padding-top: 100px;
+    padding-top: 75px;
   }
   body .contenent-présentation .cp-text {
     width: 90%;
@@ -148,6 +148,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 20px;
   }
   body .contenent-présentation .cp-picto .cp-img {
     width: 240px;
@@ -440,9 +441,9 @@
     background-position: center;
   }
   body .pc-container {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
   }
   body .pc-container #pc-nav {
     padding: 0 40px;
