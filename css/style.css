@@ -42,10 +42,10 @@
   body .mobile-container #nav .icon {
     color: #E75343;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     display: block;
     width: 27px;
-    margin: 12px 25px auto auto;
+    margin: 20px 25px auto auto;
   }
   body .mobile-container #nav #lp-n-links {
     list-style-type: none;
@@ -829,8 +829,17 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .contenent-flêche .fleche {
+  body .contenent-flêche #fleche {
     width: 30px;
     height: 30px;
+    background-image: url(../img/chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
   }
 }

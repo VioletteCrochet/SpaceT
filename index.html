@@ -116,21 +116,23 @@
 
     <div class="contenent-contact" id="pageContact">
         <div class="cc-contact">
-            <form action="">
+            <form action="/php/formilaire.php">
                 <h2>CONTACTEZ-NOUS</h2>
                 <div class="cccf-barre"></div>
-                <div class="cccf-name"><img src="img/user-solid.svg" alt="logo-spacet"><input type="text"></div>
-                <div class="cccf-mail"><img src="img/at-solid.svg" alt="logo-spacet"><input type="text"></div>
-                <div class="cccf-date"><img src="img/calendar-alt-regular.svg" alt="logo-spacet"><input type="date"></div>
-                <div class="cccf-button"><input type="submit" value="Envoyer"></div>
+                <div class="cccf-name"><img src="img/user-solid.svg" alt="logo-spacet"><input name="name" type="text"
+                        placeholder="Votre nom"></div>
+                <div class="cccf-mail"><img src="img/at-solid.svg" alt="logo-spacet"><input name="mail" lang="type:mail;erreur:- Merci de mettre une adresse mail valide"
+                        type="text" placeholder="Votre Email"></div>
+                <div class="cccf-date"><img src="img/calendar-alt-regular.svg" alt="logo-spacet"><input type="date"
+                        name="date"></div>
+                <div class="cccf-button"><input name="envoyer" type="submit" value="Envoyer"></div>
             </form>
         </div>
     </div>
 
 
     <div class="contenent-flêche">
-        <a href="javascript:void(0);" onclick="functionArrow()"><img class="fleche" src="img/chevron-down-solid.svg"
-                alt="picto-flêche"></a>
+        <a href="javascript:void(0);" onclick="functionArrow()" id="fleche"></a>
     </div>
 </body>
 
