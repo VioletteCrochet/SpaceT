@@ -42,13 +42,13 @@
             </a>
             <ul id="lp-n-links">
                 <li>
-                    <a id="nav-link" href="#pagePresentation">Présentation</a>
+                    <a id="first-link" href="#pagePresentation">Présentation</a>
                 </li>
                 <li>
-                    <a id="nav-link" href="#pageActualités">Actualités</a>
+                    <a id="nav-link2" href="#pageActualités">Actualités</a>
                 </li>
                 <li>
-                    <a id="nav-link" href="#pageContact">Contact</a>
+                    <a id="nav-link3" href="#pageContact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -116,15 +116,15 @@
 
     <div class="contenent-contact" id="pageContact">
         <div class="cc-contact">
-            <form action="/php/formilaire.php">
+            <form action="php/formilaire.php" method="POST">
                 <h2>CONTACTEZ-NOUS</h2>
                 <div class="cccf-barre"></div>
                 <div class="cccf-name"><img src="img/user-solid.svg" alt="logo-spacet"><input name="name" type="text"
-                        placeholder="Votre nom"></div>
-                <div class="cccf-mail"><img src="img/at-solid.svg" alt="logo-spacet"><input name="mail" lang="type:mail;erreur:- Merci de mettre une adresse mail valide"
-                        type="text" placeholder="Votre Email"></div>
-                <div class="cccf-date"><img src="img/calendar-alt-regular.svg" alt="logo-spacet"><input type="date"
-                        name="date"></div>
+                        placeholder="Votre nom" required></div>
+                <div class="cccf-mail"><img src="img/at-solid.svg" alt="logo-spacet"><input name="email" type="email"
+                        placeholder="Votre Email" required></div>
+                <div class="cccf-date"><img src="img/calendar-alt-regular.svg" alt="logo-spacet"><input name="date"
+                        type="date" required></div>
                 <div class="cccf-button"><input name="envoyer" type="submit" value="Envoyer"></div>
             </form>
         </div>
