@@ -119,7 +119,6 @@
     width: 100%;
     height: 100vh;
     color: white;
-    padding-top: 75px;
   }
   body .contenent-présentation .cp-text {
     width: 90%;
@@ -134,7 +133,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 196px;
+    height: 22%;
+    padding-top: 75px;
   }
   body .contenent-présentation .cp-text h1 {
     font-size: 50px;
@@ -145,7 +145,7 @@
     overflow: hidden;
   }
   body .contenent-présentation .cp-picto {
-    width: 63%;
+    height: 63%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -568,7 +568,7 @@
             justify-content: center;
   }
   body .contenent-présentation .cp-picto .cp-img {
-    height: 80%;
+    height: 600px;
     margin: 110px auto auto auto;
   }
   body .contenent-actualités {
