@@ -4,28 +4,56 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <title>SpaceT</title>
 
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/arrow.js"></script>
+    <script src="js/menu_burger.js"></script>
+
 </head>
 
 
 <body>
-    <nav>
-        <a class="n-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
-        <ul>
-            <li>
-                <a id="nav-link" href="#pagePresentation">Présentation</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#pageActualités">Actualités</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#pageContact">Contact</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="pc-container">
+        <nav id="pc-nav">
+            <a class="pcn-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
+            <ul id="pcnl-ul">
+                <li>
+                    <a id="nav-li" href="#pagePresentation">Présentation</a>
+                </li>
+                <li>
+                    <a id="nav-li" href="#pageActualités">Actualités</a>
+                </li>
+                <li>
+                    <a id="nav-li" href="#pageContact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="mobile-container">
+        <nav id="nav">
+            <a class="n-logo" href="#pageHome"><img src="img/logo_spacet.png" alt="logo-spacet"></a>
+            <a href="javascript:void(0);" class="icon" onclick="functionMenuBurger()">
+                <i class="fa fa-bars" id="icons_burger1"></i>
+                <i class="fa fa-times" id="icons_burger2"></i>
+            </a>
+            <ul id="lp-n-links">
+                <li>
+                    <a id="first-link" href="#pagePresentation">Présentation</a>
+                </li>
+                <li>
+                    <a id="nav-link2" href="#pageActualités">Actualités</a>
+                </li>
+                <li>
+                    <a id="nav-link3" href="#pageContact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
 
     <div class="contenent-home" id="pageHome">
@@ -52,32 +80,32 @@
 
 
     <div class="contenent-actualités" id="pageActualités">
-        <div class="ca-contentTop">
-            <div class="cacT-contant">
-                <div class="cactc-banner">
+        <div class="ca-contentLeft">
+            <div class="cacL-contant">
+                <div class="caclc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
                 </div>
             </div>
-            <div class="cacT-contant">
-                <div class="cactc-banner">
+            <div class="cacL-contant">
+                <div class="caclc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
                 </div>
             </div>
         </div>
-        <div class="ca-contentBottom">
-            <div class="cacB-contant">
-                <div class="cacbc-banner">
+        <div class="ca-contentRight">
+            <div class="cacR-contant">
+                <div class="cacrc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
                 </div>
             </div>
-            <div class="cacB-contant">
-                <div class="cacbc-banner">
+            <div class="cacR-contant">
+                <div class="cacrc-banner">
                     <h2>TITLE</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quae distinctio iure praesentium
                         fuga obcaecati, aperiam saepe consequatur fugit cupiditate.</p>
@@ -89,26 +117,23 @@
 
     <div class="contenent-contact" id="pageContact">
         <div class="cc-contact">
-            <form action="">
+            <form action="php/formilaire.php" method="POST">
                 <h2>CONTACTEZ-NOUS</h2>
                 <div class="cccf-barre"></div>
-                <div class="cccf-name"><img src="img/user-solid.svg" alt="logo-spacet"><input type="text"></div>
-                <div class="cccf-mail"><img src="img/at-solid.svg" alt="logo-spacet"><input type="text"></div>
-                <div class="cccf-date"><img src="img/calendar-alt-regular.svg" alt="logo-spacet"><input type="date"></div>
-                <div class="cccf-button"><input type="submit" value="Envoyer"></div>
+                <div class="cccf-name"><img src="img/user-solid.svg" alt="logo-spacet"><input name="name" type="text"
+                        placeholder="Votre nom" required></div>
+                <div class="cccf-mail"><img src="img/at-solid.svg" alt="logo-spacet"><input name="email" type="email"
+                        placeholder="Votre Email" required></div>
+                <div class="cccf-date"><img src="img/calendar-alt-regular.svg" alt="logo-spacet"><input name="date"
+                        type="date" required></div>
+                <div class="cccf-button"><input name="envoyer" type="submit" value="Envoyer"></div>
             </form>
         </div>
     </div>
-    <!--
-opacite black
-color opacity 0.7
-intensité du flou 25
-luminosité -3
--->
 
 
     <div class="contenent-flêche">
-        <a href="#pageHome"><img class="fleche" src="img/chevron-down-solid.svg" alt="picto-flêche"></a>
+        <a href="javascript:void(0);" onclick="functionArrow()" id="fleche"></a>
     </div>
 </body>
 
